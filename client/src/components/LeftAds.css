@@ -1,0 +1,14 @@
+
+.left-ads {
+  width: 30%;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.left-ads video {
+  width: 100%;
+  border-radius: 10px;
+}

@@ -1,0 +1,14 @@
+
+
+.app-container {
+  font-family: Arial, sans-serif;
+}
+
+
+.main-layout {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+
+

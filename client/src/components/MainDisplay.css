@@ -1,0 +1,16 @@
+
+
+.main-display {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 0px; 
+
+
+
+  padding-top: 80px;
+  
+  background: url("/assets/bgfog1.jpg") no-repeat center center;
+  background-size: cover; 
+  background-attachment: fixed;
+}
