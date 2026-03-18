@@ -8,28 +8,29 @@ export default function IntroVideo({ onEnter }  ) {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    // Show button after 5 seconds
     const timer = setTimeout(() => {
       setShowButton(true);
     }, 3000);
 
-    // Play video once (muted, no loop)
-    if (videoRef.current) {
-      videoRef.current.play().catch(() => {});
-    }
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="intro-container">
-      <video
-        ref={videoRef}
-        className="intro-video"
-        src="/assets/intro.mp4" // place your video here
-        muted
-        playsInline
-      />
+<video
+  ref={videoRef}
+  className="intro-video"
+  autoPlay
+  muted
+  playsInline
+  preload="auto"
+>
+  <source
+    src={`${import.meta.env.BASE_URL}assets/intro.mp4`}
+    type="video/mp4"
+  />
+</video>
 
       {showButton && (
         <button

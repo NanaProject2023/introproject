@@ -10,7 +10,7 @@ export default function MainDisplay({ active }) {
 const [products, setProducts] = useState([]);
 
 useEffect(() => {
-    fetch("/assets/products.json")
+    fetch(`${import.meta.env.BASE_URL}assets/products.json`)
       .then(res => res.json())
       .then(data => setProducts(data));
   }, []);
