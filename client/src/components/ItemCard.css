@@ -1,41 +1,39 @@
-
-
 .item-card {
   width: 360px;
-  height: 300px;
+  height: 320px;
   background: #100f0f15;
   color: #fff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+
+  margin: 20px auto;
+  box-sizing: border-box;
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
-   
-
-
-
-  display: flex;
-  flex-direction: column;
-
-    
-
-
- 
-  box-sizing: border-box; /* good practice */
-
-  
+}
+.item-card:hover {
+  transform: translateY(-8px) scale(1.03); /* 🔥 smooth lift + slight grow */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
-.item-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(50, 14, 14, 0.6);
-  
+.image-wrapper {
+  width: 360px;
+  height: 200px; /* 🔥 gives room for text */
+  overflow: hidden;
 }
 
 .item-image {
-  width: 100%;
-  height: 220px;
+  width: 360px;
+  height: 200px;
   object-fit: cover;
+  display: block;
+
+   transition: transform 0.4s ease;
+}
+
+.item-card:hover .item-image {
+  transform: scale(1.1); /* 🔥 zoom inside frame */
 }
 
 .item-info {
@@ -54,13 +52,86 @@
 
 
 
-.wraper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 👈 key fix */
-  gap: 10px;
-  padding: 10px;
-  
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-  max-width: 80%;   /* control total width */
-  margin: 0 auto;      /* centers the whole grid */
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+/* 🔥 MODAL BOX */
+.modal-content {
+  position: relative;
+  background: #111;
+  color: #fff;
+
+  padding: 20px;
+  border-radius: 12px;
+
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* 🔥 CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  background: none;
+  border: none;
+  color: #f20707;
+
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* 🔥 MODAL IMAGE */
+.modal-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+
+
+.add-btn {
+  
+  background: linear-gradient(135deg, #d3d3d6f5, #4eade866);
+  color: #1571db;
+
+  border: none;
+
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+
+  display: block;
+  margin-left: auto;
+  margin-right: 8px;
+}
+.add-btn:hover {
+  background: black;
+  transform: translateY(-2px);
+  color: white;
+}
+.add-btn:active {
+  transform: scale(0.97);
 }

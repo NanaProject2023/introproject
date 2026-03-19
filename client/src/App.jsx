@@ -3,28 +3,49 @@ import Navbar from "./components/Navbar";
 import LeftAds from "./components/LeftAds";
 import MainDisplay from "./components/MainDisplay";
 import IntroVideo from "./components/IntroVideo";
+import Cart from "./components/Cart";
 import "./App.css";
 
 export default function App() {
   const [showIntro, setShowIntro] = useState(true);
-  const [active, setActive] = useState("Home"); // ✅ move here
+  const [active, setActive] = useState("HOME");
+  const [cart, setCart] = useState([]);
+  const [showCart, setShowCart] = useState(false); // ✅ MISSING BEFORE
 
   if (showIntro) {
     return <IntroVideo onEnter={() => setShowIntro(false)} />;
   }
 
+  // ✅ ADD TO CART
+  const addToCart = (item) => {
+    setCart((prev) => {
+      const updated = [...prev, item];
+      console.log("Cart:", updated);
+      return updated;
+    });
+  };
+
   return (
     <div className="app-container">
-      <Navbar setActive={setActive} />
       
+      <Navbar
+        setActive={setActive}
+        cartCount={cart.length}
+        onCartClick={() => setShowCart(true)}  // ✅ FIXED
+      />
+
+      {showCart && (
+        <Cart
+          cart={cart}
+          onClose={() => setShowCart(false)}
+        />
+      )}
 
       <div className="main-layout">
         <LeftAds />
-        <MainDisplay active={active} />
+        <MainDisplay active={active} addToCart={addToCart} />
       </div>
+
     </div>
   );
 }
-
-
-

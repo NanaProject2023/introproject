@@ -20,13 +20,13 @@
 
 .enter-button {
   z-index: 2;
-  padding: 12px 60px;
+  padding: 12px 20px;
   font-size: 30px;
   font-family: impact;
   background-color: rgba(255, 255, 255, 0.2);
   color: rgba(17, 12, 48, 0.86);
   border: 1px solid rgba(146, 108, 83, 0.5);
-  border-radius: 20px;
+  
   cursor: pointer;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -57,8 +57,8 @@
 }
 
 .enter-button:hover {
-  background-color: rgba(197, 193, 188, 0.444);
-  border-color: rgba(106, 89, 21, 0.798);
-  color: rgba(184, 18, 18, 0.582);
+  background-color: rgba(247, 246, 244, 0.202);
+  border-color: rgba(35, 16, 93, 0.874);
+  color: rgba(5, 5, 6, 0.903);
   box-shadow: 3px 3px 10px rgba(14, 14, 14, 0.777);
 }

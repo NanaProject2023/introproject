@@ -1,4 +1,6 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   background: url("/assets/dita.jpg");
@@ -7,6 +9,7 @@
   padding: 10px 20px;
 
 }
+
 
 .navbar ul {
   list-style: none;
@@ -48,3 +51,11 @@
 .navbar li:hover::after {
   width: 100%;
 }
+.navbar .cart-icon.active {
+  color: red;
+}
+
+.navbar .cart-text .cart-icon.active {
+  color: red;
+}
+

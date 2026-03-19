@@ -1,5 +1,4 @@
 
-
 .app-container {
   font-family: Arial, sans-serif;
 }
@@ -9,6 +8,20 @@
   display: flex;
   height: calc(100vh - 60px);
 }
+.cart {
+  margin-left: auto;
+  margin-right: 20px;
+  
 
+  font-weight: 600;
+  cursor: pointer;
+}
+.cart-icon {
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.cart.active {
+  color: red;
+}
 
 

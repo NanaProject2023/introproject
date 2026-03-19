@@ -1,18 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
-export default function Navbar({ setActive }) {
-  const links = ["HOME", "BOOTS", "GLASSES", "MAKEUP", "JEANS", "CONTACT"] ;
+export default function Navbar({ cartCount }) {
+  const [active, setActive] = useState("HOME");
+
+  const links = ["HOME", "BOOTS", "GLASSES", "MAKEUP", "JEANS", "CONTACT"];
 
   return (
     <nav className="navbar">
-      <ul>
+      <ul className="nav-links">
         {links.map((link) => (
-          <li key={link} onClick={() => setActive(link)}>
+          <li
+            key={link}
+            className={active === link ? "active" : ""}
+            onClick={() => setActive(link)}
+          >
             {link}
           </li>
         ))}
       </ul>
+
+     <div className={cartCount > 0 ? "cart active" : "cart"}>
+  <span className="cart-icon">🛒</span>
+  <span className="cart-text">Cart ({cartCount})</span>
+</div>
     </nav>
   );
 }

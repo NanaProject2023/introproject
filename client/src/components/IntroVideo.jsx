@@ -37,7 +37,7 @@ export default function IntroVideo({ onEnter }  ) {
           className="enter-button"
          
           onClick={onEnter} >
-          Enter Euphoria Bazaar &gt; &gt; &gt;
+          ENTER EUPHORIA BAZAAR &gt; &gt; &gt;
         </button>
       )}
     </div>
