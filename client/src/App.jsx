@@ -10,8 +10,7 @@ export default function App() {
   const [showIntro, setShowIntro] = useState(true);
   const [active, setActive] = useState("HOME");
   const [cart, setCart] = useState([]);
-  const [showCart, setShowCart] = useState(false); // ✅ MISSING BEFORE
-
+  const [showCart, setShowCart] = useState(false); 
   if (showIntro) {
     return <IntroVideo onEnter={() => setShowIntro(false)} />;
   }
@@ -22,7 +21,13 @@ export default function App() {
       const updated = [...prev, item];
       console.log("Cart:", updated);
       return updated;
-    });
+  });
+
+  const removeFromCart = (indexToRemove) => {
+  setCart(prev => prev.filter((_, i) => i !== indexToRemove));
+  };  
+
+
   };
 
   return (
@@ -31,8 +36,8 @@ export default function App() {
       <Navbar
         setActive={setActive}
         cartCount={cart.length}
-        onCartClick={() => setShowCart(true)}  // ✅ FIXED
-      />
+        onCartClick={() => setShowCart(true)} 
+        />
 
       {showCart && (
         <Cart

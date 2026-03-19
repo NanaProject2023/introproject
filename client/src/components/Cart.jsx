@@ -17,11 +17,12 @@ export default function Cart({ cart, onClose }) {
             <div className="cart-items">
               {cart.map((item, index) => (
                 <div key={index} className="cart-item">
-                  <img src={item.image} alt={item.title} />
+                  <img src={import.meta.env.BASE_URL + item.image} alt={item.title} />
                   
                   <div className="cart-info">
                     <h4>{item.title}</h4>
                     <p>${item.price}</p>
+                    
                   </div>
                 </div>
               ))}

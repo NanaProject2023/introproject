@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 
-export default function Navbar({ cartCount }) {
+export default function Navbar({ cartCount,onCartClick }) {
   const [active, setActive] = useState("HOME");
 
   const links = ["HOME", "BOOTS", "GLASSES", "MAKEUP", "JEANS", "CONTACT"];
@@ -22,7 +22,7 @@ export default function Navbar({ cartCount }) {
 
      <div className={cartCount > 0 ? "cart active" : "cart"}>
   <span className="cart-icon">🛒</span>
-  <span className="cart-text">Cart ({cartCount})</span>
+  <span className="cart-text" onClick={onCartClick}>Cart ({cartCount})</span>
 </div>
     </nav>
   );
