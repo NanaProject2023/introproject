@@ -1,32 +1,56 @@
 import React, { useState, useEffect } from "react";
 import "./MainDisplay.css";
-import DisplayCarousel from "./DisplayCarousel";
-import ItemCard from "./ItemCard";
+import { Routes, Route } from "react-router-dom";
 
-export default function MainDisplay({ active, addToCart }) {
+import ItemCard from "./ItemCard";
+import Jeans from "./Jeans";
+
+export default function MainDisplay({ addToCart }) {
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]); // 🔥 NEW
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}assets/products.json`)
       .then(res => res.json())
-      .then(data => setProducts(data));
+      .then(data => setProducts(data))
+      .catch(err => console.error("Fetch error:", err));
   }, []);
-
- 
 
   return (
     <div className="main-display">
-      {products.map(item => (
-        <ItemCard
-          key={item.id}
-          image={item.image_url}
-          title={item.title}
-          price={item.price}
-          addToCart={addToCart}
-           
+      <Routes>
+
+        {/* HOME */}
+        <Route
+          path="/"
+          element={
+            <>
+              {products.length > 0 ? (
+                products.map(item => (
+                  <ItemCard
+                    key={item.id}
+                    image={item.image_url}
+                    title={item.title}
+                    price={item.price}
+                    addToCart={addToCart}
+                  />
+                ))
+              ) : (
+                <p>Loading...</p>
+              )}
+            </>
+          }
         />
-      ))}
+
+        {/* JEANS */}
+        <Route
+          path="/jeans"
+          element={<Jeans addToCart={addToCart} />}
+        />
+
+        {/* FALLBACK */}
+        <Route path="*" element={<p>Page not found</p>} />
+
+      </Routes>
     </div>
   );
 }

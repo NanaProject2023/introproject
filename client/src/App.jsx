@@ -1,10 +1,13 @@
+
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import LeftAds from "./components/LeftAds";
 import MainDisplay from "./components/MainDisplay";
 import IntroVideo from "./components/IntroVideo";
 import Cart from "./components/Cart";
-import "./App.css";
+import "./App.css"; 
+
+
 
 export default function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -15,20 +18,19 @@ export default function App() {
     return <IntroVideo onEnter={() => setShowIntro(false)} />;
   }
 
-  // ✅ ADD TO CART
+  
   const addToCart = (item) => {
     setCart((prev) => {
       const updated = [...prev, item];
       console.log("Cart:", updated);
       return updated;
-  });
+    });
+
+  };
 
   const removeFromCart = (indexToRemove) => {
   setCart(prev => prev.filter((_, i) => i !== indexToRemove));
   };  
-
-
-  };
 
   return (
     <div className="app-container">
@@ -49,6 +51,7 @@ export default function App() {
       <div className="main-layout">
         <LeftAds />
         <MainDisplay active={active} addToCart={addToCart} />
+        
       </div>
 
     </div>
