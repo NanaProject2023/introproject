@@ -33,6 +33,7 @@ export default function Jeans({handleAddToCart}) {
   };
 
   return (
+    <div className="jeans-page">
     <div className="jeans-container">
       <button className="nav-btn left" onClick={goLeft}>
         ◀
@@ -54,5 +55,7 @@ export default function Jeans({handleAddToCart}) {
 
 
     </div>
+    </div>
+
   );
 }

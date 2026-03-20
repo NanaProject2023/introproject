@@ -1,18 +1,20 @@
+.jeans-page {
+  width:600px;
+  height: 720px;
+  margin-top: -70px;
 
-
-/*
-
-body{
-  background: url("/assets/bgrope.jpg") no-repeat center center fixed;
-background-size: cover;
+  background-image: url("/assets/bgjeans.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-*/
+
 .jeans-container {
   position: relative;
 
   width: 500px;   
   height: 720px;  
-  padding-top:30px;
+  padding-top:0px;
 
   margin-left: 60%;
   overflow: hidden;
