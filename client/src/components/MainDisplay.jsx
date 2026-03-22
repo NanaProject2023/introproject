@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import ItemCard from "./ItemCard";
 import Jeans from "./Jeans";
 import Boots from "./Boots";
+import Glasses from "./Glasses";
 
 export default function MainDisplay({ addToCart }) {
   const [products, setProducts] = useState([]);
@@ -53,6 +54,15 @@ export default function MainDisplay({ addToCart }) {
           path="/boots"
           element={<Boots handleAddToCart={addToCart} />}
         />
+
+        {/* GLASSES */}
+        <Route
+          path="/glasses"
+          element={<Glasses handleAddToCart={addToCart} />}
+        />
+
+
+
 
         {/* FALLBACK */}
         <Route path="*" element={<p>Page not found</p>} />

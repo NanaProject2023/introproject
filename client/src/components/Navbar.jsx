@@ -20,8 +20,13 @@ export default function Navbar({ cartCount, onCartClick }) {
         {link}
       </Link>
 
-        ) : link === "HOME" ? (
+    ) : link === "HOME" ? (
       <Link to="/" onClick={() => setActive(link)}>
+        {link}
+      </Link>
+
+    ) : link === "GLASSES" ? (
+      <Link to="/glasses" onClick={() => setActive(link)}>
         {link}
       </Link>
 

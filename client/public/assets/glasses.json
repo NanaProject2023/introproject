@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Black Sunglasses",
+    "price": 45,
+    "image": "/assets/sg1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Aviator Gold Frame",
+    "price": 55,
+    "image": "/assets/sg2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Retro Round Glasses",
+    "price": 50,
+    "image": "/assets/sg3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Sport Wrap Shades",
+    "price": 60,
+    "image": "/assets/sg4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Polarized Beach Glasses",
+    "price": 65,
+    "image": "/assets/sg5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Luxury Designer Frames",
+    "price": 90,
+    "image": "/assets/sg6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Minimal Clear Frame",
+    "price": 40,
+    "image": "/assets/sg7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Oversized Fashion Shades",
+    "price": 70,
+    "image": "/assets/sg8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Matte Black Street Style",
+    "price": 58,
+    "image": "/assets/sg9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Vintage Brown Lens",
+    "price": 52,
+    "image": "/assets/sg10.jpg"
+  }
+]

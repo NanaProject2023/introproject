@@ -1,0 +1,88 @@
+/* PAGE */
+.glasses-pagee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* CONTAINER */
+.glasses-containere {
+  position: relative;
+  text-align: center;
+  margin-left: 600px;
+  margin-top: -80px;
+}
+
+/* CAROUSEL */
+.carousele {
+  width: 900px;
+  height: 680px;
+  overflow: hidden;
+  margin-top: -60px;
+ 
+  
+}
+/* TRACK */
+.carousel-tracke {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* IMAGE */
+.glasses-imagee {
+  width: 100%;          /* 🔥 key */
+  height: 100%;        /* 🔥 fixed height */
+  object-fit: cover;    /* 🔥 no stretching */
+  flex-shrink: 0;       /* 🔥 prevents shrinking */
+  
+}
+
+/* TEXT */
+.glasses-titlee {
+  margin-top: 10px;
+  font-size: 18px;
+  color: aliceblue;
+  margin-top: -140px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.glasses-pricee {
+  font-size: 16px;
+  color: #96d8eb;
+  text-align: left;
+  padding-left: 10px;
+  margin-top: -10px;
+}
+
+/* BUTTONS */
+.nav-btne {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-btn.lefte {
+  left: -50px;
+}
+
+.nav-btn.righte {
+  right: -50px;
+}
+
+/* ADD BUTTON */
+.add-cart-btne {
+ margin-right: 10px;
+  padding: 10px 15px;
+  background: #6fa6e0ce;
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+}
