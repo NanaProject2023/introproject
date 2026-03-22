@@ -3,23 +3,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 900px;
+  height: 680px;
+  margin-top: -60px;
 }
 
 /* CONTAINER */
 .glasses-containere {
   position: relative;
   text-align: center;
-  margin-left: 600px;
-  margin-top: -80px;
+  margin-left: 100px;
+  margin-top: 0px;
+  width: 900px;
+  height: 680px;
 }
 
 /* CAROUSEL */
 .carousele {
   width: 900px;
-  height: 680px;
+  height: 640px;
   overflow: hidden;
-  margin-top: -60px;
+  
+ 
  
   
 }
@@ -31,8 +36,8 @@
 
 /* IMAGE */
 .glasses-imagee {
-  width: 100%;          /* 🔥 key */
-  height: 100%;        /* 🔥 fixed height */
+  width: 900px;          /* 🔥 key */
+  height: 660px;        /* 🔥 fixed height */
   object-fit: cover;    /* 🔥 no stretching */
   flex-shrink: 0;       /* 🔥 prevents shrinking */
   
@@ -43,7 +48,7 @@
   margin-top: 10px;
   font-size: 18px;
   color: aliceblue;
-  margin-top: -140px;
+  margin-top: 10px;
   text-align: left;
   padding-left: 10px;
 }
@@ -52,14 +57,15 @@
   font-size: 16px;
   color: #96d8eb;
   text-align: left;
+  display: flex;
   padding-left: 10px;
-  margin-top: -10px;
+  margin-top: 0px;
 }
 
 /* BUTTONS */
 .nav-btne {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   background: black;
   color: white;
@@ -78,11 +84,17 @@
 
 /* ADD BUTTON */
 .add-cart-btne {
- margin-right: 10px;
-  padding: 10px 15px;
   background: #6fa6e0ce;
   color: white;
-  border: none;
+  border-radius: 5px;
+  padding: 6px 30px;
   cursor: pointer;
+  margin: -40px 300px;
+  display: flex;
+
+  
+  
+  
+  
   
 }

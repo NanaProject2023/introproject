@@ -33,7 +33,7 @@ export default function ItemCard({ image, title, price, addToCart}) {
           e.stopPropagation();
           addToCart({ image, title, price });
           }}>
-              Add
+              Add To Cart
         </button>
 
 

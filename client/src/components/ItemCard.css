@@ -5,10 +5,8 @@
   color: #fff;
   border-radius: 12px;
   overflow: hidden;
-
-  margin: 20px auto;
+  margin: 10px auto;
   box-sizing: border-box;
-
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
 }
@@ -110,25 +108,22 @@
 
 .add-btn {
   
-  background: linear-gradient(135deg, #d3d3d6f5, #4eade866);
-  color: #1571db;
-
+  background-color: rgba(38, 152, 190, 0.667);
+  color: #292a2c;
   border: none;
-
-
-  font-size: 14px;
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-size: 12px;
   font-weight: 600;
-
   cursor: pointer;
-
   transition: all 0.25s ease;
-
   display: block;
-  margin-left: auto;
-  margin-right: 8px;
+  margin: -10px 10px;
+  
+  
 }
 .add-btn:hover {
-  background: black;
+  background: rgb(53, 40, 101);
   transform: translateY(-2px);
   color: white;
 }
