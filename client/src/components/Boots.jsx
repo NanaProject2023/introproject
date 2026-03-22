@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Boots.css";
 
-export default function Boots({ addToCart }) {
+export default function Boots({ handleAddToCart}) {
   const [boots, setBoots] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -41,13 +41,14 @@ export default function Boots({ addToCart }) {
             className="boots-image"
           />
           <p className="boots-price">${currentBoot.price}</p>
-
+          
           <button
             className="add-btn"
-            onClick={() => addToCart(currentBoot)}
+            onClick={() => handleAddToCart(currentBoot)}
           >
             Add To Cart
           </button>
+          
         </div>
 
         <button className="nav-btn right" onClick={nextSlide}>

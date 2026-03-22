@@ -29,6 +29,17 @@
   object-fit: cover;   
   border-radius: 0px;
 }
+.jeans-price {
+  font-size: 20px;
+  font-family: impact;
+  color: rgb(13, 13, 13);
+  
+      
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  
+}
 
 /* Buttons */
 .nav-btn {
@@ -62,7 +73,7 @@
     
   position: absolute;
   bottom: 15px;
-  right: 15px;
+  right: 10px;
 
   background: rgb(207, 57, 57);
   font-size: 15px;

@@ -48,7 +48,7 @@ export default function MainDisplay({ addToCart }) {
           element={<Jeans handleAddToCart={addToCart} />}
         />
 
-                {/* BOOTS */}
+        {/* BOOTS */}
         <Route
           path="/boots"
           element={<Boots handleAddToCart={addToCart} />}
