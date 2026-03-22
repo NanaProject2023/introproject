@@ -6,7 +6,7 @@ import MainDisplay from "./components/MainDisplay";
 import IntroVideo from "./components/IntroVideo";
 import Cart from "./components/Cart";
 import "./App.css"; 
-
+import Boots from "./components/Boots";
 
 
 export default function App() {
@@ -51,6 +51,7 @@ export default function App() {
       <div className="main-layout">
         <LeftAds />
         <MainDisplay active={active} addToCart={addToCart} />
+       
         
       </div>
 

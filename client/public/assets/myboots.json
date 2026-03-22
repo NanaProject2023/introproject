@@ -1,0 +1,14 @@
+[
+  { "id": 1, "image": "/assets/boot1.jpg", "price": 120 },
+  { "id": 2, "image": "/assets/boot2.jpg", "price": 135 },
+  { "id": 3, "image": "/assets/boot3.jpg", "price": 110 },
+  { "id": 4, "image": "/assets/boot4.jpg", "price": 145 },
+  { "id": 5, "image": "/assets/boot5.jpg", "price": 150 },
+  { "id": 6, "image": "/assets/boot6.jpg", "price": 130 },
+  { "id": 7, "image": "/assets/boot7.jpg", "price": 125 },
+  { "id": 8, "image": "/assets/boot8.jpg", "price": 140 },
+  { "id": 9, "image": "/assets/boot9.jpg", "price": 155 },
+  { "id": 10, "image": "/assets/boot10.jpg", "price": 160 },
+  { "id": 11, "image": "/assets/boot11.jpg", "price": 170 },
+  { "id": 12, "image": "/assets/boot12.jpg", "price": 180 }
+]

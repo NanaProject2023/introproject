@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import ItemCard from "./ItemCard";
 import Jeans from "./Jeans";
+import Boots from "./Boots";
 
 export default function MainDisplay({ addToCart }) {
   const [products, setProducts] = useState([]);
@@ -44,7 +45,13 @@ export default function MainDisplay({ addToCart }) {
         {/* JEANS */}
         <Route
           path="/jeans"
-          element={<Jeans addToCart={addToCart} />}
+          element={<Jeans handleAddToCart={addToCart} />}
+        />
+
+                {/* BOOTS */}
+        <Route
+          path="/boots"
+          element={<Boots handleAddToCart={addToCart} />}
         />
 
         {/* FALLBACK */}

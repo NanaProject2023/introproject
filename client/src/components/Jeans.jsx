@@ -10,7 +10,7 @@ export default function Jeans({handleAddToCart}) {
     "/assets/alls6.jpg",
     "/assets/alls7.jpg",
     "/assets/alls8.jpg",
-    "/assets/alls2.jpg",
+    "/assets/alls14.jpg",
     "/assets/alls11.jpg",
     "/assets/alls12.jpg",
     "/assets/alls13.jpg",
