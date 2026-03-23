@@ -29,7 +29,7 @@ export default function ItemCard({ image, title, price, addToCart}) {
         </div>
         
         
-        <button className="add-btn" onClick={(e) => {
+        <button className="add-btnn" onClick={(e) => {
           e.stopPropagation();
           addToCart({ image, title, price });
           }}>

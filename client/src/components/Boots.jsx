@@ -43,7 +43,7 @@ export default function Boots({ handleAddToCart}) {
           <p className="boots-price">${currentBoot.price}</p>
           
           <button
-            className="add-btn"
+            className="aadd-btn"
             onClick={() => handleAddToCart(currentBoot)}
           >
             Add To Cart

@@ -6,6 +6,7 @@ import ItemCard from "./ItemCard";
 import Jeans from "./Jeans";
 import Boots from "./Boots";
 import Glasses from "./Glasses";
+import Makeup from "./Makeup";
 
 export default function MainDisplay({ addToCart }) {
   const [products, setProducts] = useState([]);
@@ -47,6 +48,12 @@ export default function MainDisplay({ addToCart }) {
         <Route
           path="/jeans"
           element={<Jeans handleAddToCart={addToCart} />}
+        />
+
+        {/* MAKEUP */}
+        <Route
+          path="/makeup"
+          element={<Makeup handleAddToCart={addToCart} />}
         />
 
         {/* BOOTS */}

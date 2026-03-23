@@ -18,13 +18,16 @@ body{
   display: flex;
   height: calc(100vh - 60px);
   
+  
 }
 .cart {
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
   
 
-  font-weight: 600;
   cursor: pointer;
 }
 .cart-icon {
@@ -32,7 +35,7 @@ body{
 }
 
 .cart.active {
-  color: red;
+  color: rgba(225, 69, 8, 0.946);
 }
 
 

@@ -91,6 +91,7 @@
 
   font-size: 30px;
   cursor: pointer;
+  padding: 10px 20px;
 }
 
 /* 🔥 MODAL IMAGE */
@@ -106,12 +107,12 @@
 
 
 
-.add-btn {
+.add-btnn {
   
-  background-color: rgba(38, 152, 190, 0.667);
-  color: #292a2c;
+  background-color: rgba(41, 179, 225, 0.703);
+  color: #eaebf396;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 5px 15px;
   font-size: 12px;
   font-weight: 600;
@@ -122,8 +123,8 @@
   
   
 }
-.add-btn:hover {
-  background: rgb(53, 40, 101);
+.add-btnn:hover {
+  background: rgb(16, 2, 66);
   transform: translateY(-2px);
   color: white;
 }

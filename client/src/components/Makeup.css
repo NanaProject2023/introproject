@@ -1,0 +1,49 @@
+
+.makeup-wrapper {
+  grid-column: 1 / -1;   /* 🔥 take full width */
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+}
+
+.makeup-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.makeup-card:hover {
+  transform: translateY(-5px);
+}
+
+.makeup-img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* KEY FIX */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.add-btn {
+  
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: auto;
+  
+
+}

@@ -30,6 +30,11 @@ export default function Navbar({ cartCount, onCartClick }) {
         {link}
       </Link>
 
+    ) : link === "MAKEUP" ? (
+      <Link to="/makeup" onClick={() => setActive(link)}>
+        {link}
+      </Link>
+
     ) : link === "BOOTS" ? (
       <Link to="/boots" onClick={() => setActive(link)}>
         {link}
