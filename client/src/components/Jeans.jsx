@@ -129,7 +129,9 @@ export default function Jeans({handleAddToCart}) {
         ▶
       </button>
 
+      
       <p className="jeans-price">${images[currentIndex].price}</p>
+      <h2 className="jeans-title" >{images[currentIndex].title}</h2>
           
 
       <button className="add-cart-btn" onClick={()=>handleAddToCart(images[currentIndex])}>

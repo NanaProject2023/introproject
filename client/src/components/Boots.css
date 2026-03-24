@@ -43,14 +43,18 @@
   object-fit: cover;
   object-position: center;
 }
-
+.boots-title {
+  font-size: 18px;
+  margin: -110px 15px;
+  color: rgba(236, 240, 243, 0.96);
+}
 .boots-price {
   font-size: 25px;
   font-family: impact;
   margin: 10px 15px;
   text-align: right;
-  color: rgb(255, 74, 2);
-  margin: -75px 20px;
+  color: rgba(52, 144, 231, 0.954);
+  margin: -40px 20px;
   
 }
 /*
@@ -81,16 +85,9 @@ color: rgb(50, 184, 237);
   cursor: pointer;
   border-radius: 15px;
   margin: 40px 20px;
-  
-
   margin-top: auto;     /* 🔥 pushes it to bottom */
   align-self: flex-start; /* 🔥 pushes it to left */
 }
-
-
-
-
-
 
 .nav-btn {
   font-size: 24px;

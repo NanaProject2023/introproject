@@ -86,15 +86,18 @@
 .add-cart-btne {
   background: #6fa6e0ce;
   color: white;
-  border-radius: 5px;
-  padding: 6px 30px;
+  border-radius: 15px;
+  padding: 6px 15px;
   cursor: pointer;
   margin: -40px 300px;
   display: flex;
+  border: none;
+  box-shadow: 4px 4px 10px orange;
+  
+}
+.add-cart-btne:hover {
+  background-color: aliceblue;
+  color: red;
 
-  
-  
-  
-  
-  
+
 }

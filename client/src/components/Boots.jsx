@@ -40,6 +40,7 @@ export default function Boots({ handleAddToCart}) {
             alt="boot"
             className="boots-image"
           />
+          <h3 className="boots-title">{currentBoot.title}</h3>
           <p className="boots-price">${currentBoot.price}</p>
           
           <button

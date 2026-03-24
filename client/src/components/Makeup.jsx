@@ -28,7 +28,7 @@ function Makeup({handleAddToCart}) {
               <div className="card-body text-center">
                 <h5 className="card-title">{item.title}</h5>
                 <p className="card-text price">${item.price}</p>
-                <button className="btn btn-dark add-btnee"
+                <button className="add-btnee"
                 
                   onClick={() => handleAddToCart(item)}>
                   Add to Cart

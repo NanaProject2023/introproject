@@ -30,16 +30,31 @@
   border-radius: 0px;
 }
 .jeans-price {
-  font-size: 20px;
+  font-size: 30px;
   font-family: impact;
-  color: rgb(13, 13, 13);
+  color: rgba(193, 204, 215, 0.596);
   
       
   position: absolute;
-  bottom: 0px;
+  bottom: -10px;
   left: 40px;
   
 }
+
+
+.jeans-title {
+  font-size: 30px;
+  font-family: impact;
+  color: rgba(70, 142, 194, 0.811);
+  
+      
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  
+}
+
+
 
 /* Buttons */
 .nav-btn {
@@ -78,10 +93,10 @@
   background: rgb(207, 57, 57);
   font-size: 15px;
   color: rgb(249, 244, 244);
-  padding: 10px 15px;
+  padding: 6px 15px;
   border: none;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 15px;
   
 }
 
