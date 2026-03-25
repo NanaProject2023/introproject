@@ -9,6 +9,7 @@ export default function Navbar({ cartCount, onCartClick }) {
   const links = ["HOME", "BOOTS", "GLASSES", "MAKEUP", "JEANS", "CONTACT"];
 
   return (
+    <div className="navbarsticky">
     <nav className="navbar">
       <ul className="nav-links">
   
@@ -57,5 +58,6 @@ export default function Navbar({ cartCount, onCartClick }) {
         </span>
       </div>
     </nav>
+    </div>
   );
 }

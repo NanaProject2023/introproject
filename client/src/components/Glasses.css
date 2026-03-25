@@ -84,10 +84,10 @@
 
 /* ADD BUTTON */
 .add-cart-btne {
-  background: #6fa6e0ce;
+  background: #5988baf3;
   color: white;
-  border-radius: 15px;
-  padding: 6px 15px;
+  border-radius: 20px;
+  padding: 6px 100px;
   cursor: pointer;
   margin: -40px 300px;
   display: flex;
