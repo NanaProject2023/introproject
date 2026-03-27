@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./MainDisplay.css";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter,Routes, Route } from "react-router-dom";
 
 import ItemCard from "./ItemCard";
 import Jeans from "./Jeans";
 import Boots from "./Boots";
 import Glasses from "./Glasses";
 import Makeup from "./Makeup";
+import Contact from "./Contact";
+
 
 export default function MainDisplay({ addToCart }) {
   const [products, setProducts] = useState([]);
@@ -20,6 +22,7 @@ export default function MainDisplay({ addToCart }) {
 
   return (
     <div className="main-display">
+       
       <Routes>
 
         {/* HOME */}
@@ -68,6 +71,15 @@ export default function MainDisplay({ addToCart }) {
           element={<Glasses handleAddToCart={addToCart} />}
         />
 
+                {/* CONTACT */}
+       
+        <Route
+          path="/contact"
+          element={<Contact handleAddToCart={addToCart} />}
+        />
+        
+       
+       
 
 
 
@@ -75,6 +87,8 @@ export default function MainDisplay({ addToCart }) {
         <Route path="*" element={<p>Page not found</p>} />
 
       </Routes>
+       
+  
     </div>
   );
 }

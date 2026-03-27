@@ -41,6 +41,11 @@ export default function Navbar({ cartCount, onCartClick }) {
         {link}
       </Link>
 
+          ) : link === "CONTACT" ? (
+      <Link to="/contact" onClick={() => setActive(link)}>
+        {link}
+      </Link>
+
     ) : (
       <span onClick={() => setActive(link)}>
         {link}

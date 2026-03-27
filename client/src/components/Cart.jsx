@@ -1,8 +1,9 @@
 import React from "react";
 import "./Cart.css";
 
-export default function Cart({ cart, onClose }) {
+export default function Cart({ cart, onClose,removeFromCart }) {
   const total = cart.reduce((sum, item) => sum + item.price, 0);
+
 
   return (
     <div className="cart-overlay">
@@ -11,7 +12,13 @@ export default function Cart({ cart, onClose }) {
         <h2>Your Cart</h2>
 
         {cart.length === 0 ? (
-          <p>Your cart is empty</p>
+  <div className="empty-cart">
+    <p>Your cart is empty</p>
+
+    <button onClick={onClose}>
+      Continue Shopping
+    </button>
+  </div>
         ) : (
           <>
             <div className="cart-items">
@@ -22,6 +29,11 @@ export default function Cart({ cart, onClose }) {
                   <div className="cart-info">
                     <h4>{item.title}</h4>
                     <p>${item.price}</p>
+
+                         
+                    <button onClick={() => removeFromCart(index)}>
+                          Remove
+                    </button>
                     
                   </div>
                 </div>

@@ -7,6 +7,7 @@ import IntroVideo from "./components/IntroVideo";
 import Cart from "./components/Cart";
 import "./App.css"; 
 import Boots from "./components/Boots";
+import Footer from "./components/Footer";
 
 
 export default function App() {
@@ -45,6 +46,9 @@ export default function App() {
         <Cart
           cart={cart}
           onClose={() => setShowCart(false)}
+          removeFromCart={removeFromCart}
+        
+          
         />
       )}
 
@@ -54,6 +58,8 @@ export default function App() {
        
         
       </div>
+
+      <Footer />
 
     </div>
   );
