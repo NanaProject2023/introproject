@@ -4,54 +4,63 @@
     "id": 1,
     "image_url": "/assets/cowleather.jpg",
     "title": "BCBG Max Azria Accessories",
+    "category": "Boots",
     "price": 199.99
   },
   {
     "id": 2,
     "image_url": "/assets/glasses4.jpg",
     "title": "Ray-Ban Aviator Sunglasses",
+    "category": "Glasses",
     "price": 65.99
   },
   {
     "id": 3,
     "image_url": "/assets/boots7.jpg",
     "title": "Sacks Fifth Avenue Boots",
+    "category": "Boots",
     "price": 74.99
   },
   {
     "id": 4,
     "image_url": "/assets/alls3.jpg",
     "title": "2020 Tesla Model S",
-    "price": 58999
+    "category": "Jeans",
+    "price": 179.99
   },
   {
     "id": 5,
     "image_url": "/assets/cowleather4.jpg",
     "title": " Exotic Leather Rug",
-    "price": 4999.99
+    "category": "Makeup",
+    "price": 59.99
   },
   {
     "id": 6,
     "image_url": "/assets/jewl5.jpg",
     "title": "2021 Lexus IS350",
-    "price": 45999
+    "category": "Jeans",
+    "price": 449.99
   },
   {
     "id": 7,
     "image_url": "/assets/watch.jpg",
     "title": "Movado Espirit",
-    "price": 2499.99
+    "category": "Makeup",
+    "price": 79.99
   },
   {
     "id": 8,
     "image_url": "/assets/basket.jpg",
     "title": "Cavalli Ring Asteroid",
-    "price": 5699.99
+    "category": "Jeans",
+    "price": 119.99
   },
   {
     "id": 9,
     "image_url": "/assets/jewl1.jpg",
     "title": "2022 Nissan GTR",
-    "price": 115000
+    "category": "Glasses",
+    "price": 114.99
   }
 ]
