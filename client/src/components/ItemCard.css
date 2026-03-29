@@ -1,6 +1,6 @@
 .item-card {
   width: 360px;
-  height: 320px;
+  height: 340px;
   background: #100f0f15;
   color: #fff;
   border-radius: 12px;
@@ -8,6 +8,9 @@
   margin: 10px auto;
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 20px;
+
+
   
 }
 .item-card:hover {

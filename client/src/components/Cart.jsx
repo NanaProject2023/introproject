@@ -31,7 +31,7 @@ export default function Cart({ cart, onClose,removeFromCart }) {
                     <p>${item.price}</p>
 
                          
-                    <button onClick={() => removeFromCart(index)}>
+                    <button className="remove-inside-cart" onClick={() => removeFromCart(index)}>
                           Remove
                     </button>
                     

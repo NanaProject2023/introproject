@@ -10,7 +10,8 @@
 
 .left-ads video {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0px;
+  margin-bottom: 10px;
 }
 .ad{
 
@@ -18,4 +19,16 @@ text-align: center;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 40px;
 color: white;
+
 }
+.ad:hover{
+  color: rgba(209, 103, 32, 0.774);
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+  transform: scale(1.1) translateY(-3px);   
+  transition: all 0.3s ease  ;
+ 
+}
+ 
+.ad--link {
+  text-decoration: none;
+} 

@@ -33,16 +33,10 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 
- 
-
-
-
   position: absolute;
-  top: 200px;   /* move up/down */
-  left: 100px;      /* center horizontally */
+  top: 200px;  
+  left: 100px;     
   transform: translateX(-20%);
-
-
 
   /* Fade-in animation */
   opacity: 0;
@@ -59,8 +53,12 @@
 }
 
 .enter-button:hover {
-  background-color: rgba(247, 246, 244, 0.202);
+  background-color: rgba(205, 134, 162, 0.701);
   border-color: rgba(35, 16, 93, 0.874);
-  color: rgba(5, 5, 6, 0.903);
-  box-shadow: 3px 3px 10px rgba(14, 14, 14, 0.777);
+  color: rgba(243, 238, 241, 0.627);
+  box-shadow: 3px 3px 10px black;
+ transform: translateX(-20%) scale(1.05);
+ transition: all 0.3s ease ;
+ box-shadow: 3px 5px 10px rgba(120, 102, 198, 0.3) ;
+ 
 }

@@ -12,6 +12,7 @@ import Contact from "./Contact";
 
 export default function MainDisplay({ addToCart }) {
   const [products, setProducts] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}assets/products.json`)
@@ -20,32 +21,65 @@ export default function MainDisplay({ addToCart }) {
       .catch(err => console.error("Fetch error:", err));
   }, []);
 
+
+
+const filteredProducts = selectedCategory === "all"
+  ? products
+  : products.filter(
+      product => product.category.toLowerCase() === selectedCategory
+    );
+
+
+
+
+
   return (
+
+
+<>
+    <div className="page-wrapper">
+      <div className="filter-container">
+        <label>Filter New selection by:</label>
+
+        <select
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+        >
+          <option value="all">All</option>
+          <option value="boots">Boots</option>
+          <option value="glasses">Glasses</option>
+          <option value="makeup">Makeup</option>
+          <option value="jeans">Jeans</option>
+        </select>
+      </div>
+
+
+
     <div className="main-display">
        
       <Routes>
 
         {/* HOME */}
         <Route
-          path="/"
-          element={
-            <>
-              {products.length > 0 ? (
-                products.map(item => (
-                  <ItemCard
-                    key={item.id}
-                    image={item.image_url}
-                    title={item.title}
-                    price={item.price}
-                    addToCart={addToCart}
-                  />
-                ))
-              ) : (
-                <p>Loading...</p>
-              )}
-            </>
-          }
-        />
+  path="/"
+  element={
+    <>
+      {filteredProducts.length > 0 ? (
+        filteredProducts.map(item => (
+          <ItemCard
+            key={item.id}
+            image={item.image_url}
+            title={item.title}
+            price={item.price}
+            addToCart={addToCart}
+          />
+        ))
+      ) : (
+        <p>Loading...</p>
+      )}
+    </>
+  }
+/>
 
         {/* JEANS */}
         <Route
@@ -88,7 +122,8 @@ export default function MainDisplay({ addToCart }) {
 
       </Routes>
        
-  
     </div>
+    </div>
+    </>
   );
 }

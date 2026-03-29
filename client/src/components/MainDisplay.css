@@ -1,16 +1,70 @@
 .main-display {
-  width: 80%;
+  width: 90%;
+  
+margin-top: -115px;
+  min-height: 100vh;
+  margin-left: 50px;
+
   display: grid;
-
-  grid-template-columns: repeat(auto-fit, 360px); /* 🔥 fixed */
-  justify-content: start; /* or center */
-
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding-top: 80px;
-  padding-left: 100px;
 
+  padding-top: 80px;
 
   background: url("/assets/bgfog1.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  .filter-container {
+  grid-column: 1 / -1; 
+  width: 100%;
+  background: transparent; 
+
+}
+}
+.filter-container label {
+  font-size: 25px;
+  font-weight: 600;
+  color: #579aea;
+  letter-spacing: 0.5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+}
+
+/* Dropdown styling */
+.filter-container select {
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  
+}
+
+/* Hover + focus */
+.filter-container select:hover,
+.filter-container select:focus {
+  border-color: #44a5cb;
+  box-shadow: 0 0 8px rgba(68, 165, 203, 0.6);
+  outline: none;
+}
+
+
+.page-wrapper {
+   background: url("/assets/bgfog1.jpg")  center center;
+  background-size: cover;
+  width: 100%;
 }
