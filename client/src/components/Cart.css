@@ -12,7 +12,7 @@
 }
 
 .cart-container {
-  background: rgb(231, 197, 197);
+  background: rgba(231, 197, 197, 0.812);
   width: 700px;
   height: 600px;
   max-height: 80vh;
@@ -84,5 +84,9 @@
   color: rgb(131, 128, 128);
   border: none;
   cursor: pointer;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2 {
+  color: rgb(13, 13, 119);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

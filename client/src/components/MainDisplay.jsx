@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import "./MainDisplay.css";
 import { BrowserRouter,Routes, Route } from "react-router-dom";
 
+
+import { useLocation } from "react-router-dom";
+
+
 import ItemCard from "./ItemCard";
 import Jeans from "./Jeans";
 import Boots from "./Boots";
@@ -13,6 +17,8 @@ import Contact from "./Contact";
 export default function MainDisplay({ addToCart }) {
   const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all");
+
+const location = useLocation();  
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}assets/products.json`)
@@ -38,7 +44,13 @@ const filteredProducts = selectedCategory === "all"
 
 <>
     <div className="page-wrapper">
-      <div className="filter-container">
+      
+<div
+  className={`filter-container ${
+    location.pathname === "/" ? "show" : "hide"
+  }`}
+>
+
         <label>Filter New selection by:</label>
 
         <select
@@ -52,6 +64,7 @@ const filteredProducts = selectedCategory === "all"
           <option value="jeans">Jeans</option>
         </select>
       </div>
+  
 
 
 
@@ -105,17 +118,12 @@ const filteredProducts = selectedCategory === "all"
           element={<Glasses handleAddToCart={addToCart} />}
         />
 
-                {/* CONTACT */}
+       {/* CONTACT */}
        
         <Route
           path="/contact"
           element={<Contact handleAddToCart={addToCart} />}
         />
-        
-       
-       
-
-
 
         {/* FALLBACK */}
         <Route path="*" element={<p>Page not found</p>} />

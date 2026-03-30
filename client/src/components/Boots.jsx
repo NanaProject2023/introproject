@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Boots.css";
+import BootsPopup from "./BootsPopup";
 
 export default function Boots({ handleAddToCart}) {
   const [boots, setBoots] = useState([]);
@@ -28,7 +29,12 @@ export default function Boots({ handleAddToCart}) {
   const currentBoot = boots[currentIndex];
 
   return (
+
+<>
+   <BootsPopup />
+
     <div className="boots-page">
+       
       <div className="boots-container">
         <button className="nav-btn left" onClick={prevSlide}>
           ◀
@@ -57,5 +63,7 @@ export default function Boots({ handleAddToCart}) {
         </button>
       </div>
     </div>
+</>
   );
+  
 }

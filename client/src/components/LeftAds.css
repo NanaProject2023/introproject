@@ -20,6 +20,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 40px;
 color: white;
 
+
 }
 .ad:hover{
   color: rgba(209, 103, 32, 0.774);
@@ -32,3 +33,6 @@ color: white;
 .ad--link {
   text-decoration: none;
 } 
+.ad---link{
+  text-decoration: none;
+}
