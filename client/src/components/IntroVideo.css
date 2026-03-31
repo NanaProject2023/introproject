@@ -53,9 +53,9 @@
 }
 
 .enter-button:hover {
-  background-color: rgba(205, 134, 162, 0.701);
-  border-color: rgba(35, 16, 93, 0.874);
-  color: rgba(243, 238, 241, 0.627);
+  background-color: rgba(233, 200, 213, 0.701);
+  border:none;
+  color: rgba(79, 78, 79, 0.627);
   box-shadow: 3px 3px 10px black;
  transform: translateX(-20%) scale(1.05);
  transition: all 0.3s ease ;

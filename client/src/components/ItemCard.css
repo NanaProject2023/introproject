@@ -123,13 +123,16 @@
   transition: all 0.25s ease;
   display: block;
   margin: -10px 10px;
+   
   
   
 }
 .add-btnn:hover {
-  background: rgb(16, 2, 66);
+  background: rgb(179, 178, 186);
   transform: translateY(-2px);
-  color: white;
+  color: rgb(12, 6, 75);
+  transform: translateY(-3px);
+
 }
 .add-btn:active {
   transform: scale(0.97);

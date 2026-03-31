@@ -19,7 +19,7 @@
 
 /* Popup Box */
 .boots-popup {
-  background: #ffffff;
+  background: #f5e7e7;
   padding: 30px 25px;
   border-radius: 16px;
   width: 340px;
@@ -56,7 +56,7 @@
 .boots-popup h2 {
   font-size: 20px;
   margin-bottom: 15px;
-  color: #111;
+  color: #0e035f;
 }
 
 /* Form */
@@ -68,18 +68,19 @@
 
 /* Inputs */
 .boots-input {
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-
+  padding: 9px;
+  border-radius: 20px;
+  border: 1px solid #03025d;
   font-size: 14px;
   transition: border 0.2s ease, box-shadow 0.2s ease;
+
 }
 
 .boots-input:focus {
   outline: none;
   border: 1px solid #000;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  
 }
 
 /* Buttons Container */
@@ -91,28 +92,28 @@
 
 /* Buttons */
 .boots-btn {
-  padding: 10px 16px;
-  border-radius: 8px;
+  padding: 6px 25px;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
-
   font-size: 14px;
   transition: all 0.2s ease;
 }
 
 /* Dismiss */
 .boots-btn.dismiss {
-  background: #eee;
+  background: #787575;
+  color: aquamarine;
 }
 
 .boots-btn.dismiss:hover {
-  background: #ddd;
+  background: #0b0a0a;
 }
 
 /* Submit */
 .boots-btn.submit {
-  background: #000;
-  color: #fff;
+  background: #86c3dada;
+  color: #8a4545;
 }
 
 .boots-btn.submit:hover {

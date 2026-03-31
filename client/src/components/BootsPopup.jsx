@@ -12,7 +12,7 @@ export default function BootsPopup() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 6000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
