@@ -32,7 +32,7 @@ export default function Cart({ cart, onClose,removeFromCart }) {
 
                          
                     <button className="remove-inside-cart" onClick={() => removeFromCart(index)}>
-                          Remove
+                          Remove from cart 
                     </button>
                     
                   </div>

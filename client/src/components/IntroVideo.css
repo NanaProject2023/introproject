@@ -26,7 +26,7 @@
   background-color: rgba(255, 255, 255, 0.2);
   color: rgba(17, 12, 48, 0.86);
   border: 1px solid rgba(146, 108, 83, 0.5);
-  border-radius: 50px;
+  
   margin-left: 60px;
   
   cursor: pointer;
@@ -53,12 +53,12 @@
 }
 
 .enter-button:hover {
-  background-color: rgba(233, 200, 213, 0.701);
-  border:none;
-  color: rgba(79, 78, 79, 0.627);
+  background-color: rgba(246, 244, 245, 0.701);
+
+  color: rgb(187, 66, 102);
   box-shadow: 3px 3px 10px black;
- transform: translateX(-20%) scale(1.05);
+ transform: translateY(-5px) scale(1.05);
  transition: all 0.3s ease ;
- box-shadow: 3px 5px 10px rgba(120, 102, 198, 0.3) ;
+
  
 }
