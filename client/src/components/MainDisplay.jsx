@@ -21,7 +21,7 @@ export default function MainDisplay({ addToCart }) {
 const location = useLocation();  
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}assets/products.json`)
+    fetch("/assets/products.json")
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error("Fetch error:", err));
