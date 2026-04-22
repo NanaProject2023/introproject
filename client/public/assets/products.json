@@ -2,7 +2,7 @@
 [
   {
     "id": 1,
-    "image_url": "cowleather.jpg",
+    "image_url": "/assets/cowleather.jpg",
     "title": "BCBG Max Azria Accessories",
     "category": "Boots",
     "price": 199.99
