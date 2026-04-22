@@ -8,7 +8,7 @@ export default function Glasses({ handleAddToCart }) {
   // fetch JSON
   useEffect(() => {
 
-    fetch("/assets/glasses.json")
+    fetch("/introproject/assets/glasses.json")
       .then((res) => res.json())
       .then((data) => setGlasses(data));
   }, []);

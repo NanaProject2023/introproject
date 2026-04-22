@@ -5,7 +5,7 @@ function Makeup({handleAddToCart}) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/assets/mups.json")
+    fetch("/introproject/assets/mups.json")
     
       .then((res) => res.json())
       .then((data) => setProducts(data))

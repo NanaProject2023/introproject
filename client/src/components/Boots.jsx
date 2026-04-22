@@ -8,7 +8,7 @@ export default function Boots({ handleAddToCart}) {
 
   // Fetch JSON from public/assets
   useEffect(() => {
-    fetch("/assets/myboots.json")
+    fetch("/introproject/assets/myboots.json")
       .then((res) => res.json())
       .then((data) => setBoots(data))
       .catch((err) => console.error("Error loading boots:", err));
