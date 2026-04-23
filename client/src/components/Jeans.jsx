@@ -119,7 +119,7 @@ export default function Jeans({handleAddToCart}) {
       </button>
 
 <img
-  src={`${import.meta.env.BASE_URL}${images[currentIndex].image}`}
+  src={images[currentIndex].image}
   
   alt={images[currentIndex].title}
   className="jeans-image"

@@ -24,7 +24,7 @@ export default function Cart({ cart, onClose,removeFromCart }) {
             <div className="cart-items">
               {cart.map((item, index) => (
                 <div key={index} className="cart-item">
-                  <img src={import.meta.env.BASE_URL + item.image} alt={item.title} />
+                 <img src={item.image} alt={item.title} />
                   
                   <div className="cart-info">
                     <h4>{item.title}</h4>

@@ -46,7 +46,7 @@ export default function Glasses({ handleAddToCart }) {
     {glasses.map((item) => (
       <img
         key={item.id}
-        src={`${import.meta.env.BASE_URL}${item.image}`}
+        src={item.image}
         alt={item.title}
         className="glasses-imagee"
       />

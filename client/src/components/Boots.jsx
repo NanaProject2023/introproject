@@ -42,7 +42,7 @@ export default function Boots({ handleAddToCart}) {
 
         <div className="boots-card">
           <img
-            src={`${import.meta.env.BASE_URL}${boots[currentIndex].image}`}
+            src={boots[currentIndex].image}
             alt="boot"
             className="boots-image"
           />

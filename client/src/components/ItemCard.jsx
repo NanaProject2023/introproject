@@ -17,7 +17,7 @@ export default function ItemCard({ image, title, price, addToCart}) {
         
         <div className="image-wrapper">
           <img
-            src={`${import.meta.env.BASE_URL}${image}`}
+            src={image}
             alt={title}
             className="item-image"
           />
@@ -58,7 +58,7 @@ export default function ItemCard({ image, title, price, addToCart}) {
             </button>
 
             <img
-              src={`${import.meta.env.BASE_URL}${image}`}
+              src={image}
               alt={title}
               className="modal-image"
             />
