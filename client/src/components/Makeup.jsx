@@ -21,7 +21,7 @@ function Makeup({handleAddToCart}) {
           <div key={item.id} className="col-md-4 mb-4">
             <div className="card makeup-card">
               <img
-                  src={`${import.meta.env.BASE_URL}${item.image}`}
+                  src={item.image}
                 className="card-img-top makeup-img"
                 alt={item.title}
               />
