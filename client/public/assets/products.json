@@ -4,7 +4,7 @@
     "id": 1,
     "image_url": "/assets/cowleather.jpg",
     "title": "BCBG Max Azria Accessories",
-    "category": "Boots",
+    "category": "Na",
     "price": 199.99
   },
   {
@@ -24,7 +24,7 @@
   {
     "id": 4,
     "image_url": "/assets/alls3.jpg",
-    "title": "2020 Tesla Model S",
+    "title": "2026 cavalli Overalls",
     "category": "Jeans",
     "price": 179.99
   },
@@ -32,35 +32,35 @@
     "id": 5,
     "image_url": "/assets/cowleather4.jpg",
     "title": " Exotic Leather Rug",
-    "category": "Makeup",
+    "category": "Na",
     "price": 59.99
   },
   {
     "id": 6,
     "image_url": "/assets/jewl5.jpg",
-    "title": "2021 Lexus IS350",
-    "category": "Jeans",
-    "price": 449.99
+    "title": "Lipstick by Fenty Beauty",
+    "category": "Makeup",
+    "price": 249.99
   },
   {
     "id": 7,
     "image_url": "/assets/watch.jpg",
-    "title": "Movado Espirit",
-    "category": "Makeup",
-    "price": 79.99
+    "title": "Movado Watch for 4 Her",
+    "category": "Na",
+    "price": 679.99
   },
   {
     "id": 8,
     "image_url": "/assets/basket.jpg",
-    "title": "Cavalli Ring Asteroid",
-    "category": "Jeans",
+    "title": "COACH Basket",
+    "category": "Na",
     "price": 119.99
   },
   {
     "id": 9,
     "image_url": "/assets/jewl1.jpg",
-    "title": "2022 Nissan GTR",
-    "category": "Glasses",
-    "price": 114.99
+    "title": "BCBG Max Azria Boots",
+    "category": "Boots",
+    "price": 314.99
   }
 ]
